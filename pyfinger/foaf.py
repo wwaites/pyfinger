@@ -44,12 +44,15 @@ def serialize_thimbl(g, uri=None):
 
     for knows in g.distinct_objects(person, FOAF.knows):
         friend = {}
-        mbox = getprop(knows, FOAF.mbox)
-        if mbox is not None:
-            friend["address"] = mbox
+        name = getprop(knows, FOAF.name)
+        if name is not None:
+            friend["name"] = name
         nick = getprop(knows, FOAF.nick)
         if nick is not None:
             friend["nick"] = nick
+        mbox = getprop(knows, FOAF.mbox)
+        if mbox is not None:
+            friend["address"] = mbox
         if isinstance(knows, URIRef):
             friend["seeAlso"] = [ knows ]
 
