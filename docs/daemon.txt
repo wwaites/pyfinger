@@ -1,17 +1,21 @@
 daemon
 ------
 
-The BSD *fingerd(8)* supports a command-line option, *-p* for specifying
+The BSD `fingerd(8)`_ supports a command-line option, *-p* for specifying
 a program to retrieve local system information. By default it will
-use the local *finger(1)* program. This package installs a program
-called *pyfingerd* to replace this. It does two things differently,
+use the local `finger(1)`_ program. This package installs a program
+called :program:`pyfinger` to replace this. It does two things
+differently,
 
   * Information about home directories, shells and last logins is
     not revealed.
   * It supports a *~/.foaf* file which should be in N3 format which
     is served for a request for *user.foaf@host*.
 
-To use it simply put something like::
+To use it simply put something like the following in */etc/inetd.conf*::
 
     finger  stream  tcp     nowait/3/10 nobody /usr/libexec/fingerd fingerd -s -p /somewhere/pyfinger
     finger  stream  tcp6    nowait/3/10 nobody /usr/libexec/fingerd fingerd -s -p /somewhere/pyfinger
+
+.. _finger(1): http://www.freebsd.org/cgi/man.cgi?query=finger
+.. _fingerd(8): http://www.freebsd.org/cgi/man.cgi?query=fingerd

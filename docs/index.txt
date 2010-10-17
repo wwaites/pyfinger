@@ -3,9 +3,18 @@ pyfinger
 
 This package provides some support for the finger protocol
 primarily for use in the `Thimbl`_ project. It includes a
-local information service for BSD fingerd, a helper module
-to teach :module:`urllib2` about *finger://* urls and some
-FOAF support
+local information service for BSD *fingerd(8)*, a helper module
+to teach :mod:`urllib2` about *finger://* urls and some
+FOAF support.
+
+Source code is available on `PyPI`_ as well as on `Github`_.
+
+Installation should be as simple as doing one of the following
+depending on your preferences::
+
+  easy_install pyfinger
+  pip install pyfinger
+  pip install git+git://github.com/wwaites/pyfinger.git#egg=pyfinger
 
 .. toctree::
    :maxdepth: 2
@@ -14,3 +23,5 @@ FOAF support
    urllib2.txt
 
 .. _Thimbl: http://thimbl.net/
+.. _PyPI: http://pypi.python.org/pypi/pyfinger
+.. _Github: http://github.org/wwaites/pyfinger
