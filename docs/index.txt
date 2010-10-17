@@ -20,6 +20,7 @@ depending on your preferences::
    :maxdepth: 2
 
    daemon.txt
+   tool.txt
    urllib2.txt
 
 .. _Thimbl: http://thimbl.net/

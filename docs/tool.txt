@@ -1,0 +1,14 @@
+:program:`foafthimbl`
+---------------------
+
+A command line tool for transforming FOAF profiles into Thimbl
+JSON.
+
+:cmdoption: -f, --format
+    output in the given format. Can be *thimbl* or any of the
+    serialisations supported by :mod:`rdflib`.
+
+Example usage::
+
+    foafthimbl ww@river.styx.org > ~/.plan
+    foafthimbl -f pretty-xml ww@river.styx.org > ~/public_html/foaf.rdf
