@@ -1,0 +1,16 @@
+pyfinger
+========
+
+This package provides some support for the finger protocol
+primarily for use in the `Thimbl`_ project. It includes a
+local information service for BSD fingerd, a helper module
+to teach :module:`urllib2` about *finger://* urls and some
+FOAF support
+
+.. toctree::
+   :maxdepth: 2
+
+   daemon.txt
+   urllib2.txt
+
+.. _Thimbl: http://thimbl.net/

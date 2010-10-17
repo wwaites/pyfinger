@@ -1,0 +1,13 @@
+urllib2
+-------
+
+Python's :module:`urllib2` doesn't natively support URLs with the *finger* scheme
+as defined in the `finger URL Specification` internet draft. Doing this,
+
+.. code-block: python
+
+    import pyfinger.fingerurl
+
+is enough to teach :module:`urllib2` about these URLs.
+
+.. _finger URL Specification: http://tools.ietf.org/html/draft-ietf-uri-url-finger-02
