@@ -50,7 +50,8 @@ def serialize_thimbl(g, uri=None):
         nick = getprop(knows, FOAF.nick)
         if nick is not None:
             friend["nick"] = nick
-        friend["seeAlso"] = [ knows ]
+        if isinstance(knows, URIRef):
+            friend["seeAlso"] = [ knows ]
 
         thimbl["following"].append(friend)
 
