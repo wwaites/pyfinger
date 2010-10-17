@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# virtuoso python documentation build configuration file, created by
+# pyfinger python documentation build configuration file, created by
 # sphinx-quickstart on Thu Aug 19 15:02:54 2010.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -40,8 +40,8 @@ source_suffix = '.txt'
 master_doc = 'index'
 
 # General information about the project.
-project = u'virtuoso'
-copyright = u'2010, Open Knowledge Foundation'
+project = u'pyfinger'
+copyright = u'2010, William Waites'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -49,7 +49,7 @@ copyright = u'2010, Open Knowledge Foundation'
 #
 # The full version, including alpha/beta/rc tags.
 from pkg_resources import get_distribution
-release = get_distribution("virtuoso").version
+release = get_distribution("pyfinger").version
 # The short X.Y version.
 version = ".".join(release.split(".")[:2])
 
@@ -165,7 +165,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'virtuosodoc'
+htmlhelp_basename = 'pyfingerdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -179,8 +179,8 @@ htmlhelp_basename = 'virtuosodoc'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'virtuoso.tex', u'Virtuoso for Python Documentation',
-   u'Open Knowledge Foundation', 'manual'),
+  ('index', 'pyfinger.tex', u'pyfinger documentation',
+   u'William Waites', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -212,8 +212,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'virtuoso', u'Virtuoso for Python Documentation',
-     [u'Open Knowledge Foundation', u'William Waites'], 1)
+    ('index', 'pyfinger', u'pyfinger documentation',
+     [u'William Waites'], 1)
 ]
 
 
