@@ -2,7 +2,11 @@
 ---------------------
 
 A command line tool for transforming FOAF profiles into Thimbl
-JSON.
+JSON. To use this tool you need the `ORDF`_ library installed
+which can be simply installed using one of::
+
+   pip install ordf
+   easy_install ordf
 
 :cmdoption: -f, --format
     output in the given format. Can be *thimbl* or any of the
@@ -12,3 +16,5 @@ Example usage::
 
     foafthimbl ww@river.styx.org > ~/.plan
     foafthimbl -f pretty-xml ww@river.styx.org > ~/public_html/foaf.rdf
+
+.. _ORDF: http://ordf.org/
